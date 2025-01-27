@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Página inicial</title>
   </head>
   <body>
-    <h1 id="title"></h1>
-    <script>
-      let name = "Rafaella" 
-      document.getElementById("title").textContent = "Hello, " + name + "!";
-    </script>
+    <div class="container">
+      <h1>You're welcome!</h1>
+      <p>Let's personalize your greeting using JavaScript!</p>
+      <div class="saudacao" id="greetingMessage">Hi there, visitor!</div>
+      <button onclick="changeName()">Personalize your greeting!</button>
+    </div>
   </body>
+  <script>
+    function changeName() {
+      let name = "Rafaella"
+      document.getElementById("greetingMessage").textContent = "Hi there, " + name + "! "
+    }
+  </script>
 </html>
