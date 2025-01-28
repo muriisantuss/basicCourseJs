@@ -116,3 +116,10 @@ button.edit:hover {
   font-weight: bold;
   color: #28A745;
 }
+.messageAlert{
+  font-weight: bold;
+  color: #331F19;
+}
+.ocult{
+  display: none;
+}
